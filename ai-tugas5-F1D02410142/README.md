@@ -203,19 +203,19 @@ Hasil yang diharapkan:
 
 Tidak ditemukan kesimpulan karena tidak ada aturan yang kondisi-kondisinya terpenuhi.
 
-10. Screenshot Pengujian
+## 10. Screenshot Pengujian
 
-Kasus 1 – Masalah pada modem atau ISP
+### Kasus 1 – Masalah pada modem atau ISP
 
-"Screenshot kasus 1" (screenshot/kasus1.png)
+![Screenshot Kasus 1](screenshot/kasus1.png)
 
-Kasus 2 – Masalah pada WiFi router dan gangguan sinyal WiFi
+### Kasus 2 – Masalah pada WiFi router dan gangguan sinyal WiFi
 
-"Screenshot kasus 2" (screenshot/kasus2.png)
+![Screenshot Kasus 2](screenshot/kasus2.png)
 
-Kasus 3 – Tidak ditemukan kesimpulan
+### Kasus 3 – Tidak ditemukan kesimpulan
 
-"Screenshot kasus 3" (screenshot/kasus3.png)
+![Screenshot Kasus 3](screenshot/kasus3.png)
 
 11. Batas Keberlakuan Sistem
 
