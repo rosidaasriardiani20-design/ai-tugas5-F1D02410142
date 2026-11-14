@@ -223,4 +223,4 @@ Pengetahuan yang digunakan dalam sistem ini berasal dari dokumentasi resmi Micro
 
 12. Penggunaan Alat Bantu AI
 
-Dalam pengerjaan tugas ini, AI digunakan sebagai alat bantu untuk memahami konsep sistem pakar, menyusun aturan IF-THEN, membantu penulisan kode program, serta menyusun dokumentasi README. Program dan aturan dipelajari serta diuji kembali agar dapat dipahami oleh pembuatnya.
+Dalam pengerjaan tugas ini, saya menggunakan AI sebagai alat bantu belajar untuk memahami konsep sistem pakar dan metode Forward Chaining. AI juga digunakan untuk membantu memberikan penjelasan ketika terdapat bagian materi atau kode program yang belum saya pahami. Sementara itu, penyusunan aturan, pengerjaan program, pengujian, dan penyusunan dokumentasi dilakukan oleh saya sendiri. Setiap bagian yang dikerjakan tetap saya pelajari dan pahami agar dapat menjelaskan cara kerja sistem yang dibuat.
