@@ -1,0 +1,30 @@
+{
+  "judul": "Diagnosis gangguan WiFi di rumah (tidak bisa online atau lambat)",
+  "batas": "Aturan berasal dari 2 sumber: dokumentasi resmi Microsoft Support (untuk laptop Windows 10/11) dan artikel bantuan Office of Information Technology, Duke University (jaringan WiFi rumah). Hanya mencakup pemisahan masalah pada perangkat, modem/ISP, router WiFi, dan kondisi sinyal. Hasilnya saran awal, bukan keputusan akhir; jika masalah berlanjut, hubungi penyedia internet (ISP) atau teknisi.",
+  "sumber": {
+    "S1": "Fix Wi-Fi connection issues in Windows, Microsoft Support (dokumentasi resmi), https://support.microsoft.com/en-us/help/10741, diakses 10 Nov 2026",
+    "S2": "Home and Wireless Network Tips and Troubleshooting, Office of Information Technology, Duke University, https://oit.duke.edu/help/articles/kb0032708/, diakses 10 Nov 2026"
+  },
+  "pertanyaan": {
+    "hanya satu perangkat bermasalah": "Apakah hanya satu perangkat yang bermasalah (perangkat lain di WiFi yang sama normal)?",
+    "semua perangkat bermasalah": "Apakah semua perangkat di WiFi tersebut bermasalah (lambat atau tidak bisa online)?",
+    "ping ke router berbalas": "Apakah ping ke router (default gateway, misalnya 192.168.1.1) mendapat balasan?",
+    "internet normal lewat kabel LAN": "Apakah internet normal bila komputer disambung ke router dengan kabel LAN?",
+    "router di lantai atau sudut tertutup": "Apakah router diletakkan di lantai, di sudut ruangan, atau di dalam lemari?",
+    "ada gangguan dekat router": "Apakah ada gangguan dekat router (microwave, atau banyak WiFi tetangga di kanal yang sama)?"
+  },
+  "kesimpulan": [
+    "masalah pada perangkat",
+    "masalah pada modem atau ISP",
+    "masalah pada WiFi router",
+    "gangguan sinyal WiFi"
+  ],
+  "aturan": [
+    {"id": "R1", "jika": ["hanya satu perangkat bermasalah"], "mode": "dan", "maka": "masalah pada perangkat", "sumber": "S1"},
+    {"id": "R2", "jika": ["semua perangkat bermasalah"], "mode": "dan", "maka": "masalah pada jaringan rumah", "sumber": "S2"},
+    {"id": "R3", "jika": ["masalah pada jaringan rumah", "ping ke router berbalas"], "mode": "dan", "maka": "masalah pada modem atau ISP", "sumber": "S1"},
+    {"id": "R4", "jika": ["masalah pada jaringan rumah", "internet normal lewat kabel LAN"], "mode": "dan", "maka": "masalah pada WiFi router", "sumber": "S1"},
+    {"id": "R5", "jika": ["router di lantai atau sudut tertutup", "ada gangguan dekat router"], "mode": "atau", "maka": "kondisi sinyal WiFi buruk", "sumber": "S2"},
+    {"id": "R6", "jika": ["masalah pada WiFi router", "kondisi sinyal WiFi buruk"], "mode": "dan", "maka": "gangguan sinyal WiFi", "sumber": "S2"}
+  ]
+}
